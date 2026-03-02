@@ -1,0 +1,51 @@
+#include <wire.h>
+#include <addadafruit_pwmservodriver.h>
+#include <addadafruit_ST7735andST7789.h>
+
+  int LED1 = 12;
+  int LED2 = 9;
+  int LED3 = 4;
+  int LED4 = 3;
+  int LED5 = 1;
+
+  int photoResistor1 = A0;
+  int photoResistor2 = A1;
+  int photoResistor3 = A2;
+  int photoResistor4 = A3;
+  int photoResistor5 = A4;
+
+  bool timerOn = false;
+
+  int compSel = 0;
+
+  bool active[] = [0,0,0,0,0];
+
+  bool empty = 0;
+
+  bool pillBoxDispense[] = [0,0,0,0,0];
+
+void setup() {
+  //LEDS
+  
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+
+}
+void loop() {
+  for(int i = 0; i<5; i++)
+  {
+    
+  // put your main code here, to run repeatedly:
+  if(timerOn){
+    //speaker turns on and LED light turns on
+    for(int i = 0; i<5; i++){
+      if(pillBoxDispense[i])
+      //dispense pill
+    }
+  
+  }
+  }
+}
