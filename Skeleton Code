@@ -20,7 +20,7 @@
 
   bool active[] = [0,0,0,0,0];
 
-  bool empty = 0;
+  bool empty[] = [0,0,0,0,0];
 
   bool pillBoxDispense[] = [0,0,0,0,0];
 
